@@ -1495,7 +1495,7 @@ async function checkVersion() {
     if (!data.versions || !data.versions.includes(currentVersion)) {
       // Log danh sách phiên bản nếu phiên bản không hợp lệ
       console.log('Danh sách phiên bản hợp lệ:', data.versions);
-      alert(`Phiên bản hiện tại (${currentVersion}) không hợp lệ hoặc không được tìm thấy. Vui lòng cập nhật phiên bản mới nhất.`);
+      alert(`Phiên bản hiện tại (${currentVersion}) không hợp lệ hoặc không được tìm thấy. Vui lòng cập nhật phiên bản mới nhất từ đây "https://github.com/TranMinh2908/StudyAidX".`);
       destroyMenu(); // Gọi hàm để xóa menu khi phiên bản không hợp lệ
     } else {
       // Log khi phiên bản hợp lệ
