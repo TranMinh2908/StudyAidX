@@ -1475,7 +1475,7 @@ window.addEventListener('load', handleAutoExtract);
 // Listen for navigation events (for single-page applications)
 window.addEventListener('popstate', handleAutoExtract);
 
-const VERSION_CHECK_URL = 'https://raw.githubusercontent.com/Dimasurid2908/version.json/refs/heads/main/version.json';
+const VERSION_CHECK_URL = 'https://raw.githubusercontent.com/TranMinh2908/Version/refs/heads/main/version.json';
 
 // Hàm kiểm tra phiên bản hiện tại
 async function checkVersion() {
@@ -2379,7 +2379,7 @@ let keyUsageInfo = {};
 let lastKnownKeysHash = '';
 
 // URL của file raw GitHub chứa premium keys
-const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Dimasurid2908/premium_keys.json/main/premium_keys.json';
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/TranMinh2908/Premium-Key/refs/heads/main/premium_keys.json';
 
 // Hàm để tải premium keys từ GitHub và kiểm tra sự thay đổi
 async function loadPremiumKeys() {
