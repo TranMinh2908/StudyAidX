@@ -4,6 +4,7 @@
 // @version      1.1
 // @description  A helper tool for quizzes on lms.vinschool.edu.vn
 // @match        https://lms.vinschool.edu.vn/*
+// @match        https://vinschool.instructure.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
@@ -18446,3 +18447,4 @@ console.log("🚀 [SAFE CHECK] Script loaded - will check Firebase farm config s
 // ===========================================
 // END OF ERROR HANDLING SYSTEM
 // ===========================================
+
