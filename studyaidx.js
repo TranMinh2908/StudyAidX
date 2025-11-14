@@ -4,7 +4,6 @@
 // @version      1.1
 // @description  A helper tool for quizzes on lms.vinschool.edu.vn
 // @match        https://lms.vinschool.edu.vn/*
-// @match        https://vinschool.instructure.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
@@ -8280,7 +8279,7 @@ async function destroyMenu() {
                                         <div id="functionsSection" style="display: none;">
                                             <div class="section">
                                                 <div class="section-title">Actions</div>
-                                                <button id="extractButton" title="Extract data from current test"  style="display: none;" >📋 Extract Data</button>
+                                                <button id="extractButton" title="Extract data from current test"  >📋 Extract Data</button>
                                                 <button id="calculatorButton" title="Open calculator for calculations">🧮 Calculator</button>
                                                 <button id="autoAnswerButton" title="Automatically select random answers for questions">🎲 Choose Answer (Random)</button>
                                                 <button id="aiAnswerButton" title="Use AI to select answers for questions">🤖 Choose Answer (AI)</button>
@@ -8293,7 +8292,7 @@ async function destroyMenu() {
                                                 </div>
                                             </div>
 
-                                            <button id="downloadImagesButton" style="display: none;" title="Download necessary images from test">📥 Download Images that need!</button>
+                                            <button id="downloadImagesButton"  title="Download necessary images from test">📥 Download Images that need!</button>
                                             <div class="media-upload-section">
                                                 <button id="uploadMediaButton" title="Upload images or audio for use in test">📁 Upload Images/Audio</button>
                                                 <input type="file" id="mediaUploader" multiple accept="image/*,audio/*" style="display: none;">
@@ -10252,7 +10251,7 @@ async function selectAnswersWithAI() {
         const { GoogleGenerativeAI } = await import(
             "https://esm.run/@google/generative-ai"
         );
-        const API_KEY = "AIzaSyAxasVpc8FGsLOcToZB9yslD-X4-WtaAd4";
+        const API_KEY = "AIzaSyBdS43u9CJs2fb5Mp_coO3xsXxj6KcgSpo";
         const genAI = new GoogleGenerativeAI(API_KEY);
         console.log("✅ Google Generative AI loaded successfully");
 
@@ -10618,7 +10617,7 @@ async function selectAnswersWithAI() {
             const { GoogleGenerativeAI } = await import(
                 "https://esm.run/@google/generative-ai"
             );
-            const API_KEY = "AIzaSyAxasVpc8FGsLOcToZB9yslD-X4-WtaAd4"; // Replace with your actual API key
+            const API_KEY = "AIzaSyBdS43u9CJs2fb5Mp_coO3xsXxj6KcgSpo"; // Replace with your actual API key
             const genAI = new GoogleGenerativeAI(API_KEY);
 
             async function sendToAI(prompt, focusPrompt = "") {
@@ -11617,7 +11616,7 @@ async function selectAnswersWithAI() {
             );
             if (!GoogleGenerativeAI) throw new Error("Failed to load AI model");
 
-            const API_KEY = "AIzaSyAxasVpc8FGsLOcToZB9yslD-X4-WtaAd4";
+            const API_KEY = "AIzaSyBdS43u9CJs2fb5Mp_coO3xsXxj6KcgSpo";
             const genAI = new GoogleGenerativeAI(API_KEY);
             const model = genAI.getGenerativeModel({ model: selectedModel });
 
@@ -18447,4 +18446,3 @@ console.log("🚀 [SAFE CHECK] Script loaded - will check Firebase farm config s
 // ===========================================
 // END OF ERROR HANDLING SYSTEM
 // ===========================================
-
